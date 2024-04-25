@@ -1,0 +1,19 @@
+{
+  "name": "fsd56wdt-be",
+  "version": "1.0.0",
+  "description": "Backend application - RESTful API - nodejs and expressjs and mongodb",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/praveen220704/fsd56wdt-be.git"
+  },
+  "author": "praveen220704",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/praveen220704/fsd56wdt-be/issues"
+  },
+  "homepage": "https://github.com/praveen220704/fsd56wdt-be#readme"
+}
