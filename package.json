@@ -18,6 +18,7 @@
   "homepage": "https://github.com/praveen220704/fsd56wdt-be#readme",
   "dependencies": {
     "dotenv": "^16.4.5",
+    "express": "^4.19.2",
     "mongoose": "^8.3.2"
   }
 }
