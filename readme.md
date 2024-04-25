@@ -51,3 +51,69 @@
         - Backend Deployment - Render
         - Frontend Deployment - Netlify
     - Conclusion
+
+## Setup
+
+- Run `npm init` to create a package.json file.
+- Run `npm install` to install the dependencies.
+
+## Application
+
+Job Portal Application
+
+### Features
+
+- [x] User Registration
+- [x] User Login
+
+- [x] Admin Dashboard
+
+  - [x] Add a company
+  - [x] Update a company
+  - [x] Delete a company
+  - [x] Get all companies
+  - [x] Get company by ID
+
+  - [x] Add a job
+  - [x] Update a job
+  - [x] Delete a job
+  - [x] Get all jobs
+  - [x] Get job by ID
+
+- [x] User Dashboard
+
+  - [x] View all jobs
+  - [x] View a job by ID
+  - [x] Apply for a job
+  - [x] View applied jobs
+
+- [x] User Profile
+
+  - [x] Get user profile
+  - [x] Update user profile
+  - [x] Delete user profile
+
+- [x] Logout
+
+## API Endpoints
+
+### Users
+
+#### Unauthenticated user
+
+- `POST /api/users` - Create a new user
+- `POST /api/users/login` - Login user
+
+#### Authenticated user
+
+- `POST /api/users/logout` - Logout user
+- `GET /api/users/me` - Get current user
+- `PUT /api/users/me` - Update current user
+- `DELETE /api/users/me` - Delete current user
+
+#### Authenticated - Admin:
+
+- `GET /api/users` - Get all users
+- `GET /api/users/:id` - Get user by ID
+- `PUT /api/users/:id` - Update user by ID
+- `DELETE /api/users/:id` - Delete user by ID
