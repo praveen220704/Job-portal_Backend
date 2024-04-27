@@ -1,5 +1,12 @@
 # FullStack Development Demo
 
+## About
+
+This repository contains the code for the backend application for the [Frontend Repository]()
+
+Backend Application is a RESTful API developed using Node.js and Express.js. It uses MongoDB as the database and Mongoose as the ODM (Object Data Modeling).
+
+
 ## Sessions
 
 - **Session - I:**
