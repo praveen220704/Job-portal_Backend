@@ -6,10 +6,9 @@ const userSchema=new mongoose.Schema({
     username:String,
     passwordHash:String,
     name:String,
-    Location:{
+    location:{
         type:String,
-        location:String,
-        default:"Unknown"
+        default:'Unknown'
     },
     role:{
         type:String,
