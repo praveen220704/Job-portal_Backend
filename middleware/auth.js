@@ -29,6 +29,30 @@ const auth = {
       response.status(500).json({ message: error.message });
     }
   },
+  isAdmin: async (request, response, next) => {
+    try {
+      // get the user id from the request object
+      const userId = request.userId;
+
+      // find the user by id
+      const user = await User.findById(userId);
+
+      // if the user is not found, return an error message
+      if (!user) {
+        return response.status(400).json({ message: "User not found" });
+      }
+
+      // check if the user is an admin and return an error message \
+      if (user.role !== "admin") {
+        return response.status(403).json({ message: "Forbidden" });
+      }
+
+      // call the next middleware
+      next();
+    } catch (error) {
+      response.status(500).json({ message: error.message });
+    }
+  },
 };
 
 // export the auth middleware
