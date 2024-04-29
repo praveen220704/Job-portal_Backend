@@ -16,12 +16,12 @@ const cookieParser = require("cookie-parser");
 // require morgan
 const morgan = require("morgan");
 const companyRouter = require("./routes/companyRoutes");
-const jobRouter = require('./routes/jobRoutes');
+const jobRouter = require("./routes/jobRoutes");
 
 // use the cors middleware
 app.use(
   cors({
-    origin: "http://localhost:3001",
+    origin: "*", // Allow all origins
     credentials: true,
   })
 );
@@ -38,7 +38,7 @@ app.use(express.json());
 // define the endpoints
 app.use("/api/users", userRouter);
 app.use("/api/companies", companyRouter);
-app.use("/api/jobs",jobRouter);
+app.use("/api/jobs", jobRouter);
 
 // export the app module
 module.exports = app;
