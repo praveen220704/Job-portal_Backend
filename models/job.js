@@ -1,7 +1,7 @@
 const mongoose=require('mongoose')
 
 // define the job schema
-const jobSchema=new mongoose.Schema({
+const JobSchema=new mongoose.Schema({
     title:String,
     description:String,
     location:String,
@@ -31,4 +31,7 @@ const jobSchema=new mongoose.Schema({
         type:mongoose.Schema.Types.ObjectId,
         ref:'User'
     }]
-})
+});
+
+// create the model and export it
+module.exports=mongoose.model('Job',JobSchema,'jobs');
