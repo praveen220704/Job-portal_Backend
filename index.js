@@ -21,6 +21,6 @@ app.listen(config.PORT,()=>{
 )
 })
 .catch((error)=>{
-    console.log('Error connecting to MongoDB...',error,message);
+    console.log('Error connecting to MongoDB...',error.message);
 })
 
